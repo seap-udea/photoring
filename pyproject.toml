@@ -1,9 +1,4 @@
 [build-system]
 requires=['setuptools',
-          'pymcel','scipy','matplotlib','rebound','pymcel','pandas']
-
-# Secondary:
-# 'plotly','folium','leafmap','pyarrow','geopandas','nbformat',
-# 'dash','dash_bootstrap_components','dash_leaflet',
-
+          'scipy','matplotlib','pandas']
 build-backend = "setuptools.build_meta"

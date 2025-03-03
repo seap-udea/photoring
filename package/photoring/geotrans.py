@@ -3165,7 +3165,7 @@ class UtilPlot(object):
         return man,exp
     
 class PlotGrid(object):
-    """
+    r"""
     Class PlotGrid
     
     Create a grid of plots showing the projection of a N-dimensional

@@ -1,4 +1,4 @@
-ENVIRONMENT=.photoring
+ENVIRONMENT="."$(shell basename $(PWD))
 PYTHON=python3
 
 ######################################################################
@@ -7,6 +7,7 @@ PYTHON=python3
 show:
 	@echo "Python command: $(PYTHON)"
 	@$(PYTHON) --version
+	@echo "Environment: $(ENVIRONMENT)"
 
 environment:
 	@if [ ! -d "$(ENVIRONMENT)" ]; then \
@@ -15,6 +16,10 @@ environment:
 	else \
 		echo "Environment $(ENVIRONMENT) already exists..."; \
 	fi
+
+install:environment
+	@echo "Installing editable..."
+	@$(ENVIRONMENT)/bin/pip install -e .
 
 clean:
 	@echo "Cleaning crap"
