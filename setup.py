@@ -49,7 +49,8 @@ setuptools.setup(
     # ######################################################################
     # DEPENDENCIES
     # ######################################################################
-    install_requires=['scipy','matplotlib','pandas'],
+    install_requires=['scipy','matplotlib','pandas',
+                      'jupyter','nbconvert','multiprocess'],
 
     # ######################################################################
     # OPTIONS
